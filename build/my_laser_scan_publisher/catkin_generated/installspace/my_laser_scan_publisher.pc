@@ -1,0 +1,8 @@
+prefix=/home/kimwonjun/catkin_ws/install
+
+Name: my_laser_scan_publisher
+Description: Description of my_laser_scan_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
