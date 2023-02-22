@@ -150,6 +150,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/kimwonjun/catkin_ws/build/my_odometry_publisher/cmake_install.cmake")
   include("/home/kimwonjun/catkin_ws/build/my_robot_setup_tf/cmake_install.cmake")
   include("/home/kimwonjun/catkin_ws/build/hector_slam/hector_mapping/cmake_install.cmake")
+  include("/home/kimwonjun/catkin_ws/build/my_robot_kwj_2dnav/cmake_install.cmake")
   include("/home/kimwonjun/catkin_ws/build/ydlidar_ros_driver/cmake_install.cmake")
 
 endif()
