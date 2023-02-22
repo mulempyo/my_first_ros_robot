@@ -1,7 +1,7 @@
 <launch>
 <!-- sensor node pkg -->
    <node pkg="ydlidar_ros_driver" type="ydlidar_ros_driver_node" name="ydlidar_lidar_publisher" output="screen">
-    <!-- string property -->
+     <!-- string property -->
     <param name="port"         type="string" value="/dev/ttyUSB0"/>  
     <param name="frame_id"     type="string" value="laser_frame"/>
     <param name="ignore_array"     type="string" value=""/>
@@ -35,14 +35,14 @@
     <param name="range_max"    type="double" value="16.0" />
     <!-- frequency is invalid, External PWM control speed -->
     <param name="frequency"    type="double" value="7.0"/>
- </node>
+   </node>
 <!-- odom node pkg -->
  <node pkg="my_odometry_publisher" type="odometry_publisher" name="odom_node" output="screen">
-    <param name="odom_param" value="param_value" />
+    <param name="odom_topic" value="/odom" />
  </node>
 
- <node pkg="transform_configuration_pkg" type="transform_configuration_type" name="transform_configuration_name" output="screen">
-    <param name="transform_configuration_param" value="param_value" />
+ <node pkg="my_robot_setup_tf" type="my_robot_setup_tf_node" name="tf_node" output="screen">
+    <param name="tf_topic" value="/tf" />
  </node>
 
 </launch> 
