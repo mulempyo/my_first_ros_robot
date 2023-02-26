@@ -1169,8 +1169,32 @@ hector_trajectory_server_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/hector_
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 
+//Dependencies for the target
+joint_state_listener_LIB_DEPENDS:STATIC=general;robot_state_publisher_solver;general;orocos-kdl;
+
+//Value Computed by CMake
+joint_state_publisher_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/joint_state_publisher/joint_state_publisher
+
+//Value Computed by CMake
+joint_state_publisher_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/joint_state_publisher/joint_state_publisher
+
+//Value Computed by CMake
+joint_state_publisher_gui_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/joint_state_publisher/joint_state_publisher_gui
+
+//Value Computed by CMake
+joint_state_publisher_gui_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/joint_state_publisher/joint_state_publisher_gui
+
 //The directory containing a CMake configuration file for kdl_conversions.
 kdl_conversions_DIR:PATH=/opt/ros/melodic/share/kdl_conversions/cmake
+
+//The directory containing a CMake configuration file for kdl_parser.
+kdl_parser_DIR:PATH=/opt/ros/melodic/share/kdl_parser/cmake
+
+//Value Computed by CMake
+kwj_bot_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/kwj_bot
+
+//Value Computed by CMake
+kwj_bot_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/kwj_bot
 
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
@@ -1198,6 +1222,12 @@ move_base_DIR:PATH=/opt/ros/melodic/share/move_base/cmake
 
 //The directory containing a CMake configuration file for move_base_msgs.
 move_base_msgs_DIR:PATH=/opt/ros/melodic/share/move_base_msgs/cmake
+
+//Value Computed by CMake
+my_kwj_urdf_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/my_kwj_urdf
+
+//Value Computed by CMake
+my_kwj_urdf_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/my_kwj_urdf
 
 //Value Computed by CMake
 my_laser_scan_publisher_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/my_laser_scan_publisher
@@ -1268,6 +1298,9 @@ odometry_publisher_tutorial_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/navi
 //The directory containing a CMake configuration file for openslam_gmapping.
 openslam_gmapping_DIR:PATH=/opt/ros/melodic/share/openslam_gmapping/cmake
 
+//The directory containing a CMake configuration file for orocos_kdl.
+orocos_kdl_DIR:PATH=/opt/ros/melodic/share/orocos_kdl/cmake
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
@@ -1284,6 +1317,15 @@ robot_setup_tf_tutorial_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/naviga
 robot_setup_tf_tutorial_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/navigation_tutorials/robot_setup_tf_tutorial
 
 //Value Computed by CMake
+robot_state_publisher_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/robot_state_publisher
+
+//Value Computed by CMake
+robot_state_publisher_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/robot_state_publisher
+
+//Dependencies for the target
+robot_state_publisher_solver_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libkdl_parser.so;general;/opt/ros/melodic/lib/liburdf.so;general;/usr/lib/aarch64-linux-gnu/liburdfdom_sensor.so;general;/usr/lib/aarch64-linux-gnu/liburdfdom_model_state.so;general;/usr/lib/aarch64-linux-gnu/liburdfdom_model.so;general;/usr/lib/aarch64-linux-gnu/liburdfdom_world.so;general;/usr/lib/aarch64-linux-gnu/libtinyxml.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/aarch64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/aarch64-linux-gnu/libpython2.7.so;general;/usr/lib/aarch64-linux-gnu/libboost_program_options.so;general;/usr/lib/aarch64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/librosconsole_bridge.so;general;/opt/ros/melodic/lib/libtf.so;general;/opt/ros/melodic/lib/libtf2_ros.so;general;/opt/ros/melodic/lib/libactionlib.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/aarch64-linux-gnu/liblog4cxx.so;general;/usr/lib/aarch64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libtf2.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/aarch64-linux-gnu/libboost_system.so;general;/usr/lib/aarch64-linux-gnu/libboost_thread.so;general;/usr/lib/aarch64-linux-gnu/libboost_chrono.so;general;/usr/lib/aarch64-linux-gnu/libboost_date_time.so;general;/usr/lib/aarch64-linux-gnu/libboost_atomic.so;general;/usr/lib/aarch64-linux-gnu/libpthread.so;general;/usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4;general;/opt/ros/melodic/lib/liborocos-kdl.so.1.4.0;general;orocos-kdl;
+
+//Value Computed by CMake
 roomba_stage_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/navigation_tutorials/roomba_stage
 
 //Value Computed by CMake
@@ -1294,6 +1336,9 @@ rosbag_storage_DIR:PATH=/opt/ros/melodic/share/rosbag_storage/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for rosconsole_bridge.
+rosconsole_bridge_DIR:PATH=/opt/ros/melodic/share/rosconsole_bridge/cmake
 
 //The directory containing a CMake configuration file for roscpp.
 roscpp_DIR:PATH=/opt/ros/melodic/share/roscpp/cmake
@@ -1376,6 +1421,9 @@ teleop_twist_listener_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/teleop_twi
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/melodic/share/tf2/cmake
 
+//The directory containing a CMake configuration file for tf2_kdl.
+tf2_kdl_DIR:PATH=/opt/ros/melodic/share/tf2_kdl/cmake
+
 //The directory containing a CMake configuration file for tf2_msgs.
 tf2_msgs_DIR:PATH=/opt/ros/melodic/share/tf2_msgs/cmake
 
@@ -1390,6 +1438,12 @@ tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
 
 //The directory containing a CMake configuration file for tf_conversions.
 tf_conversions_DIR:PATH=/opt/ros/melodic/share/tf_conversions/cmake
+
+//The directory containing a CMake configuration file for urdf.
+urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
+
+//The directory containing a CMake configuration file for urdfdom_headers.
+urdfdom_headers_DIR:PATH=/usr/lib/aarch64-linux-gnu/urdfdom_headers/cmake
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
@@ -1550,7 +1604,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=29
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1591,6 +1645,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Test COMPILER_SUPPORTS_CXX11
+COMPILER_SUPPORTS_CXX11:INTERNAL=1
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.1.1()]
 //Details about finding PythonInterp
