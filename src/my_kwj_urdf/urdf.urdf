@@ -1,15 +1,39 @@
 <?xml version="1.0"?>
 <robot name="KWJBot">
-  <link name="base_link" />
-    <joint name="base_joint" type="fixed">
-      <parent link="base_link" />
-      <child link="wheel_link"/>
-    </joint>  
 
-    <link name="wheel_link">
-      <inertial>
+    <joint name="left_wheel_joint" type="continuous">
+      <origin xyz="-0.25 0.0 0.0" rpy="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="left_wheel"/>
+    </joint>
+
+    <joint name="right_wheel_joint" type="continuous">
+      <origin xyz="0.25 0.0 0.0" rpy="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="right_wheel"/>
+    </joint>
+
+    <link name="base_link">
+       <inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="1" />
+        <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.1" /> 
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.5 0.5 0.1"/>
+        </geometry>
+        <material name="white">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+    </link>
+      
+    <link name="left_wheel">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.1" />
         <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" /> 
       </inertial>
       <collision>
@@ -21,10 +45,33 @@
       <visual>
         <origin xyz="0.05 0 0" rpy="0 0 0"/>
         <geometry>
+          <cylinder radius="0.1" length="0.05"/>
+        </geometry>
+        <material name="grey">
+          <color rgba="0.5 0.5 0.5 1"/>
+        </material>
+      </visual>
+    </link>
+    
+    <link name="right_wheel">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.1" />
+        <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" /> 
+      </inertial>
+      <collision>
+        <origin xyz="0.05 0 0" rpy="0 0 0"/>
+        <geometry>
           <cylinder radius="0.05" length="0.01"/>
         </geometry>
-        <material name="white">
-          <color rgba="1 1 1 1"/>
+      </collision>
+      <visual>
+        <origin xyz="0.05 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.1" length="0.05"/>
+        </geometry>
+        <material name="grey">
+          <color rgba="0.5 0.5 0.5 1"/>
         </material>
       </visual>
     </link>

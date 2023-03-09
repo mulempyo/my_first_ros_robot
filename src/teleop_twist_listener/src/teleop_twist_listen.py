@@ -45,14 +45,14 @@ def callback(msg):
        GPIO.output(IN2, GPIO.LOW)
        GPIO.output(IN3, GPIO.LOW)
        GPIO.output(IN4, GPIO.HIGH)
-       time.sleep(0.5)
+       
     if a < 0 and b == 0 and c == 0:
        rospy.loginfo("Back")
        GPIO.output(IN1, GPIO.LOW)
        GPIO.output(IN2, GPIO.HIGH)
        GPIO.output(IN3, GPIO.HIGH)
        GPIO.output(IN4, GPIO.LOW)
-       time.sleep(0.5)
+       
     if a == 0 and b == 0 and c == 0:
        rospy.loginfo("STOP")
        GPIO.output(ENA, GPIO.LOW)
@@ -61,21 +61,21 @@ def callback(msg):
        GPIO.output(IN3, GPIO.LOW)
        GPIO.output(IN4, GPIO.LOW)
        GPIO.output(ENB, GPIO.LOW)
-       time.sleep(0.5)
+       
     if a == 0 and b == 0 and c > 0:
        rospy.loginfo("RIGHT")
        GPIO.output(IN1, GPIO.LOW)
        GPIO.output(IN2, GPIO.LOW)
        GPIO.output(IN3, GPIO.LOW)
        GPIO.output(IN4, GPIO.HIGH)
-       time.sleep(0.5)
+       
     if a == 0 and b == 0 and c < 0:
        rospy.loginfo("LEFT")
        GPIO.output(IN1, GPIO.HIGH)
        GPIO.output(IN2, GPIO.LOW)
        GPIO.output(IN3, GPIO.LOW)
        GPIO.output(IN4, GPIO.LOW)
-       time.sleep(0.5)
+       
     
 
 def listener():
