@@ -1494,32 +1494,6 @@ map_to_image_node/fast:
 .PHONY : map_to_image_node/fast
 
 #=============================================================================
-# Target rules for targets named point_cloud_publisher
-
-# Build rule for target.
-point_cloud_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 point_cloud_publisher
-.PHONY : point_cloud_publisher
-
-# fast build rule for target.
-point_cloud_publisher/fast:
-	$(MAKE) -f my_laser_scan_publisher/CMakeFiles/point_cloud_publisher.dir/build.make my_laser_scan_publisher/CMakeFiles/point_cloud_publisher.dir/build
-.PHONY : point_cloud_publisher/fast
-
-#=============================================================================
-# Target rules for targets named laser_scan_publisher
-
-# Build rule for target.
-laser_scan_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 laser_scan_publisher
-.PHONY : laser_scan_publisher
-
-# fast build rule for target.
-laser_scan_publisher/fast:
-	$(MAKE) -f my_laser_scan_publisher/CMakeFiles/laser_scan_publisher.dir/build.make my_laser_scan_publisher/CMakeFiles/laser_scan_publisher.dir/build
-.PHONY : laser_scan_publisher/fast
-
-#=============================================================================
 # Target rules for targets named _run_tests_gmapping_rostest_test_basic_localization_upside_down.launch
 
 # Build rule for target.
@@ -2246,45 +2220,6 @@ hector_trajectory_server: cmake_check_build_system
 hector_trajectory_server/fast:
 	$(MAKE) -f hector_slam/hector_trajectory_server/CMakeFiles/hector_trajectory_server.dir/build.make hector_slam/hector_trajectory_server/CMakeFiles/hector_trajectory_server.dir/build
 .PHONY : hector_trajectory_server/fast
-
-#=============================================================================
-# Target rules for targets named odometry_publisher
-
-# Build rule for target.
-odometry_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 odometry_publisher
-.PHONY : odometry_publisher
-
-# fast build rule for target.
-odometry_publisher/fast:
-	$(MAKE) -f my_odometry_publisher/CMakeFiles/odometry_publisher.dir/build.make my_odometry_publisher/CMakeFiles/odometry_publisher.dir/build
-.PHONY : odometry_publisher/fast
-
-#=============================================================================
-# Target rules for targets named robot_tf_publisher
-
-# Build rule for target.
-robot_tf_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robot_tf_publisher
-.PHONY : robot_tf_publisher
-
-# fast build rule for target.
-robot_tf_publisher/fast:
-	$(MAKE) -f my_robot_setup_tf/CMakeFiles/robot_tf_publisher.dir/build.make my_robot_setup_tf/CMakeFiles/robot_tf_publisher.dir/build
-.PHONY : robot_tf_publisher/fast
-
-#=============================================================================
-# Target rules for targets named robot_tf_listener
-
-# Build rule for target.
-robot_tf_listener: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robot_tf_listener
-.PHONY : robot_tf_listener
-
-# fast build rule for target.
-robot_tf_listener/fast:
-	$(MAKE) -f my_robot_setup_tf/CMakeFiles/robot_tf_listener.dir/build.make my_robot_setup_tf/CMakeFiles/robot_tf_listener.dir/build
-.PHONY : robot_tf_listener/fast
 
 #=============================================================================
 # Target rules for targets named hector_mapping
@@ -3168,8 +3103,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... map_to_image_node"
-	@echo "... point_cloud_publisher"
-	@echo "... laser_scan_publisher"
 	@echo "... _run_tests_gmapping_rostest_test_basic_localization_upside_down.launch"
 	@echo "... run_tests_gmapping_rostest_test_basic_localization_upside_down.launch"
 	@echo "... run_tests_gmapping_rostest_test_basic_localization_stage_replay2.launch"
@@ -3226,9 +3159,6 @@ help:
 	@echo "... pose_and_orientation_to_imu_node"
 	@echo "... hector_map_server"
 	@echo "... hector_trajectory_server"
-	@echo "... odometry_publisher"
-	@echo "... robot_tf_publisher"
-	@echo "... robot_tf_listener"
 	@echo "... hector_mapping"
 	@echo "... hector_mapping_gennodejs"
 	@echo "... std_srvs_generate_messages_cpp"
