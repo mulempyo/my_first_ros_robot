@@ -9,9 +9,11 @@ project(my_robot_kwj_2dnav)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   move_base
-  my_laser_scan_publisher
-  my_odometry_publisher
-  my_robot_setup_tf
+  roscpp
+  tf
+  nav_msgs
+  sensor_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -205,3 +207,5 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+
