@@ -1,0 +1,8 @@
+prefix=/home/kimwonjun/catkin_ws/devel
+
+Name: kwj_bringup
+Description: Description of kwj_bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

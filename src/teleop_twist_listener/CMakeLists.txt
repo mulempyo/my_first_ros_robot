@@ -201,6 +201,4 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-add_executable(teleop_listener src/teleop_twist_listener.cpp)
-add_dependencies(teleop_listener ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(teleop_listener ${catkin_LIBRARIES})
+

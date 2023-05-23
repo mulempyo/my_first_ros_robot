@@ -1,0 +1,8 @@
+prefix=/home/kimwonjun/catkin_ws/install
+
+Name: teleop_twist_listener
+Description: Description of teleop_twist_listener
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lteleop_twist_listener
+Requires: roscpp std_msgs
