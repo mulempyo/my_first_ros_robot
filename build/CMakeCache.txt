@@ -298,6 +298,15 @@ OpenCV_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/opencv4
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
 
+//Path to a file.
+PYTHON_INCLUDE_DIR:PATH=/usr/include/python2.7
+
+//Path to a library.
+PYTHON_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libpython2.7.so
+
+//Path to a library.
+PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
+
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=2
 
@@ -944,7 +953,7 @@ UBUNTU:BOOL=TRUE
 UBUNTU_BIONIC:BOOL=TRUE
 
 //Path to a file.
-_file_name:FILEPATH=/home/kimwonjun/catkin_ws/src/slam_gmapping/gmapping/test/basic_localization_laser_different_beamcount.test
+_file_name:FILEPATH=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_test/test/rosserial_python_socket.test
 
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
@@ -1169,6 +1178,15 @@ hector_trajectory_server_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/hector_
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 
+//Value Computed by CMake
+imu_msgs_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/pigeon_imu_driver/imu_msgs
+
+//The directory containing a CMake configuration file for imu_msgs.
+imu_msgs_DIR:PATH=/home/kimwonjun/catkin_ws/devel/share/imu_msgs/cmake
+
+//Value Computed by CMake
+imu_msgs_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/pigeon_imu_driver/imu_msgs
+
 //Dependencies for the target
 joint_state_listener_LIB_DEPENDS:STATIC=general;robot_state_publisher_solver;general;orocos-kdl;
 
@@ -1196,6 +1214,12 @@ kwj_bot_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/kwj_bot
 //Value Computed by CMake
 kwj_bot_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/kwj_bot
 
+//Value Computed by CMake
+kwj_bringup_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/kwj_bringup
+
+//Value Computed by CMake
+kwj_bringup_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/kwj_bringup
+
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
 
@@ -1222,6 +1246,12 @@ move_base_DIR:PATH=/opt/ros/melodic/share/move_base/cmake
 
 //The directory containing a CMake configuration file for move_base_msgs.
 move_base_msgs_DIR:PATH=/opt/ros/melodic/share/move_base_msgs/cmake
+
+//Value Computed by CMake
+mpu6050_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/pigeon_imu_driver/mpu6050
+
+//Value Computed by CMake
+mpu6050_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/pigeon_imu_driver/mpu6050
 
 //Value Computed by CMake
 my_kwj_urdf_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/my_kwj_urdf
@@ -1364,6 +1394,105 @@ rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
 
+//Value Computed by CMake
+rosserial_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial
+
+//Value Computed by CMake
+rosserial_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial
+
+//Value Computed by CMake
+rosserial_arduino_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_arduino
+
+//Value Computed by CMake
+rosserial_arduino_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_arduino
+
+//Value Computed by CMake
+rosserial_client_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_client
+
+//The directory containing a CMake configuration file for rosserial_client.
+rosserial_client_DIR:PATH=/home/kimwonjun/catkin_ws/devel/share/rosserial_client/cmake
+
+//Value Computed by CMake
+rosserial_client_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_client
+
+//Value Computed by CMake
+rosserial_embeddedlinux_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_embeddedlinux
+
+//Value Computed by CMake
+rosserial_embeddedlinux_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_embeddedlinux
+
+//Value Computed by CMake
+rosserial_mbed_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_mbed
+
+//Value Computed by CMake
+rosserial_mbed_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_mbed
+
+//Value Computed by CMake
+rosserial_msgs_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_msgs
+
+//The directory containing a CMake configuration file for rosserial_msgs.
+rosserial_msgs_DIR:PATH=/home/kimwonjun/catkin_ws/devel/share/rosserial_msgs/cmake
+
+//Value Computed by CMake
+rosserial_msgs_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_msgs
+
+//Value Computed by CMake
+rosserial_python_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_python
+
+//The directory containing a CMake configuration file for rosserial_python.
+rosserial_python_DIR:PATH=/home/kimwonjun/catkin_ws/devel/share/rosserial_python/cmake
+
+//Value Computed by CMake
+rosserial_python_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_python
+
+//Value Computed by CMake
+rosserial_server_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_server
+
+//The directory containing a CMake configuration file for rosserial_server.
+rosserial_server_DIR:PATH=/home/kimwonjun/catkin_ws/devel/share/rosserial_server/cmake
+
+//Value Computed by CMake
+rosserial_server_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_server
+
+//Dependencies for the target
+rosserial_server_lookup_LIB_DEPENDS:STATIC=general;/usr/lib/aarch64-linux-gnu/libpython2.7.so;
+
+//Value Computed by CMake
+rosserial_test_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_test
+
+//Value Computed by CMake
+rosserial_test_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_test
+
+//Value Computed by CMake
+rosserial_tivac_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_tivac
+
+//Value Computed by CMake
+rosserial_tivac_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_tivac
+
+//Value Computed by CMake
+rosserial_vex_cortex_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_vex_cortex
+
+//Value Computed by CMake
+rosserial_vex_cortex_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_vex_cortex
+
+//Value Computed by CMake
+rosserial_vex_v5_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_vex_v5
+
+//Value Computed by CMake
+rosserial_vex_v5_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_vex_v5
+
+//Value Computed by CMake
+rosserial_windows_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_windows
+
+//Value Computed by CMake
+rosserial_windows_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_windows
+
+//Value Computed by CMake
+rosserial_xbee_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/rosserial/rosserial_xbee
+
+//Value Computed by CMake
+rosserial_xbee_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/rosserial/rosserial_xbee
+
 //The directory containing a CMake configuration file for rostest.
 rostest_DIR:PATH=/opt/ros/melodic/share/rostest/cmake
 
@@ -1435,6 +1564,9 @@ tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
 
 //The directory containing a CMake configuration file for tf_conversions.
 tf_conversions_DIR:PATH=/opt/ros/melodic/share/tf_conversions/cmake
+
+//The directory containing a CMake configuration file for topic_tools.
+topic_tools_DIR:PATH=/opt/ros/melodic/share/topic_tools/cmake
 
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
@@ -1601,7 +1733,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=43
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1648,6 +1780,8 @@ COMPILER_SUPPORTS_CXX11:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.1.1()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.17()]
+//Details about finding PythonLibs
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/aarch64-linux-gnu/libpython2.7.so][/usr/include/python2.7][v2.7.17()]
 //Details about finding Qt4
 FIND_PACKAGE_MESSAGE_DETAILS_Qt4:INTERNAL=[/usr/bin/qmake][/usr/lib/aarch64-linux-gnu/qt4/bin/moc][/usr/lib/aarch64-linux-gnu/qt4/bin/rcc][/usr/include/qt4][/usr/lib/aarch64-linux-gnu][/usr/include/qt4/QtCore][/usr/lib/aarch64-linux-gnu/libQtCore.so][/usr/include/qt4/QtGui][/usr/lib/aarch64-linux-gnu/libQtGui.so][/usr/lib/aarch64-linux-gnu/qt4/bin/uic][v4.8.7(4.6)]
 //Details about finding Threads
@@ -1674,10 +1808,16 @@ GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_INCLUDE_DIR
+PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
+//ADVANCED property for variable: PYTHON_LIBRARY
+PYTHON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
+PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QT_ARTHURPLUGIN_PLUGIN_DEBUG
 QT_ARTHURPLUGIN_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QT_ARTHURPLUGIN_PLUGIN_RELEASE

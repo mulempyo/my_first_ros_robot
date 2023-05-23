@@ -68,29 +68,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -102,6 +79,17 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target test
 test:
@@ -134,6 +122,18 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -211,6 +211,21 @@ teleop_twist_listener_gencpp: teleop_twist_listener/CMakeFiles/teleop_twist_list
 teleop_twist_listener_gencpp/fast:
 	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f teleop_twist_listener/CMakeFiles/teleop_twist_listener_gencpp.dir/build.make teleop_twist_listener/CMakeFiles/teleop_twist_listener_gencpp.dir/build
 .PHONY : teleop_twist_listener_gencpp/fast
+
+# Convenience name for target.
+teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/rule:
+	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/rule
+.PHONY : teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+teleop_twist_listener_generate_messages_eus: teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/rule
+
+.PHONY : teleop_twist_listener_generate_messages_eus
+
+# fast build rule for target.
+teleop_twist_listener_generate_messages_eus/fast:
+	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/build.make teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/build
+.PHONY : teleop_twist_listener_generate_messages_eus/fast
 
 # Convenience name for target.
 teleop_twist_listener/CMakeFiles/teleop_twist_listener_gennodejs.dir/rule:
@@ -303,36 +318,6 @@ teleop_twist_listener_genpy/fast:
 .PHONY : teleop_twist_listener_genpy/fast
 
 # Convenience name for target.
-teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/rule:
-	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/rule
-.PHONY : teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-teleop_twist_listener_generate_messages_eus: teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/rule
-
-.PHONY : teleop_twist_listener_generate_messages_eus
-
-# fast build rule for target.
-teleop_twist_listener_generate_messages_eus/fast:
-	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/build.make teleop_twist_listener/CMakeFiles/teleop_twist_listener_generate_messages_eus.dir/build
-.PHONY : teleop_twist_listener_generate_messages_eus/fast
-
-# Convenience name for target.
-teleop_twist_listener/CMakeFiles/teleop_listener.dir/rule:
-	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 teleop_twist_listener/CMakeFiles/teleop_listener.dir/rule
-.PHONY : teleop_twist_listener/CMakeFiles/teleop_listener.dir/rule
-
-# Convenience name for target.
-teleop_listener: teleop_twist_listener/CMakeFiles/teleop_listener.dir/rule
-
-.PHONY : teleop_listener
-
-# fast build rule for target.
-teleop_listener/fast:
-	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f teleop_twist_listener/CMakeFiles/teleop_listener.dir/build.make teleop_twist_listener/CMakeFiles/teleop_listener.dir/build
-.PHONY : teleop_listener/fast
-
-# Convenience name for target.
 teleop_twist_listener/CMakeFiles/teleop_twist_listener_genlisp.dir/rule:
 	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 teleop_twist_listener/CMakeFiles/teleop_twist_listener_genlisp.dir/rule
 .PHONY : teleop_twist_listener/CMakeFiles/teleop_twist_listener_genlisp.dir/rule
@@ -347,33 +332,6 @@ teleop_twist_listener_genlisp/fast:
 	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f teleop_twist_listener/CMakeFiles/teleop_twist_listener_genlisp.dir/build.make teleop_twist_listener/CMakeFiles/teleop_twist_listener_genlisp.dir/build
 .PHONY : teleop_twist_listener_genlisp/fast
 
-src/teleop_twist_listener.o: src/teleop_twist_listener.cpp.o
-
-.PHONY : src/teleop_twist_listener.o
-
-# target to build an object file
-src/teleop_twist_listener.cpp.o:
-	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f teleop_twist_listener/CMakeFiles/teleop_listener.dir/build.make teleop_twist_listener/CMakeFiles/teleop_listener.dir/src/teleop_twist_listener.cpp.o
-.PHONY : src/teleop_twist_listener.cpp.o
-
-src/teleop_twist_listener.i: src/teleop_twist_listener.cpp.i
-
-.PHONY : src/teleop_twist_listener.i
-
-# target to preprocess a source file
-src/teleop_twist_listener.cpp.i:
-	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f teleop_twist_listener/CMakeFiles/teleop_listener.dir/build.make teleop_twist_listener/CMakeFiles/teleop_listener.dir/src/teleop_twist_listener.cpp.i
-.PHONY : src/teleop_twist_listener.cpp.i
-
-src/teleop_twist_listener.s: src/teleop_twist_listener.cpp.s
-
-.PHONY : src/teleop_twist_listener.s
-
-# target to generate assembly for a file
-src/teleop_twist_listener.cpp.s:
-	cd /home/kimwonjun/catkin_ws/build && $(MAKE) -f teleop_twist_listener/CMakeFiles/teleop_listener.dir/build.make teleop_twist_listener/CMakeFiles/teleop_listener.dir/src/teleop_twist_listener.cpp.s
-.PHONY : src/teleop_twist_listener.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -381,10 +339,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/local"
-	@echo "... install"
 	@echo "... teleop_twist_listener_generate_messages_lisp"
 	@echo "... teleop_twist_listener_geneus"
 	@echo "... teleop_twist_listener_gencpp"
+	@echo "... install/strip"
+	@echo "... teleop_twist_listener_generate_messages_eus"
 	@echo "... teleop_twist_listener_gennodejs"
 	@echo "... teleop_twist_listener_generate_messages"
 	@echo "... teleop_twist_listener_generate_messages_cpp"
@@ -392,16 +351,11 @@ help:
 	@echo "... teleop_twist_listener_generate_messages_py"
 	@echo "... teleop_twist_listener_generate_messages_nodejs"
 	@echo "... teleop_twist_listener_genpy"
-	@echo "... install/strip"
-	@echo "... teleop_twist_listener_generate_messages_eus"
-	@echo "... teleop_listener"
 	@echo "... teleop_twist_listener_genlisp"
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... list_install_components"
-	@echo "... src/teleop_twist_listener.o"
-	@echo "... src/teleop_twist_listener.i"
-	@echo "... src/teleop_twist_listener.s"
+	@echo "... install"
 .PHONY : help
 
 
