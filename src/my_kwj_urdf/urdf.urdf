@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <robot name="KWJBot">
-    <link name="base_footprint"/>
+    <link name="odom"/>
    
     <joint name="base_joint" type="fixed">
-       <parent link="base_footprint"/>
+       <parent link="odom"/>
        <child link="base_link"/>
     </joint>
     <joint name="left_wheel_joint" type="continuous">

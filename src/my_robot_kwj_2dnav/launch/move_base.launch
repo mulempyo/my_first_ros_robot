@@ -16,6 +16,11 @@
     <rosparam file="$(find my_robot_kwj_2dnav)/param/dwa_local_planner_params.yaml" command="load" />
    
   </node>
+   
+  <node pkg ="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0.0 0.0 0.0 /map /odom 40" />
+  <node pkg ="tf" type="static_transform_publisher" name = "odom_to_link" args="0.0 0.0 0.0 0.0 0.0 0.0 /odom /base_link 40" />
+  <node pkg ="tf" type="static_transform_publisher" name="base_link_to_seft_wheel" args="0.0 0.0 0.0 0.0 0.0 0.0 /base_link /left_wheel 40"/>
+  <node pkg ="tf" type="static_transform_publisher" name="base_link_to_right_wheel" args="0.0 0.0 0.0 0.0 0.0 0.0 /base_link /right_wheel 40"/>
 
 <!-- Run Rviz -->
   <node pkg="rviz" name ="rviz" type="rviz" args="$(find my_robot_kwj_2dnav)/rviz/rviz.rviz"  />

@@ -1676,162 +1676,6 @@ visualization_msgs_generate_messages_nodejs/fast:
 .PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named imu_msgs_generate_messages_eus
-
-# Build rule for target.
-imu_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_generate_messages_eus
-.PHONY : imu_msgs_generate_messages_eus
-
-# fast build rule for target.
-imu_msgs_generate_messages_eus/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_eus.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_eus.dir/build
-.PHONY : imu_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_gencpp
-
-# Build rule for target.
-imu_msgs_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_gencpp
-.PHONY : imu_msgs_gencpp
-
-# fast build rule for target.
-imu_msgs_gencpp/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_gencpp.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_gencpp.dir/build
-.PHONY : imu_msgs_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_geneus
-
-# Build rule for target.
-imu_msgs_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_geneus
-.PHONY : imu_msgs_geneus
-
-# fast build rule for target.
-imu_msgs_geneus/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_geneus.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_geneus.dir/build
-.PHONY : imu_msgs_geneus/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_generate_messages_nodejs
-
-# Build rule for target.
-imu_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_generate_messages_nodejs
-.PHONY : imu_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-imu_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_nodejs.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_nodejs.dir/build
-.PHONY : imu_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_generate_messages_cpp
-
-# Build rule for target.
-imu_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_generate_messages_cpp
-.PHONY : imu_msgs_generate_messages_cpp
-
-# fast build rule for target.
-imu_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_cpp.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_cpp.dir/build
-.PHONY : imu_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_generate_messages
-
-# Build rule for target.
-imu_msgs_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_generate_messages
-.PHONY : imu_msgs_generate_messages
-
-# fast build rule for target.
-imu_msgs_generate_messages/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages.dir/build
-.PHONY : imu_msgs_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_generate_messages_lisp
-
-# Build rule for target.
-imu_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_generate_messages_lisp
-.PHONY : imu_msgs_generate_messages_lisp
-
-# fast build rule for target.
-imu_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_lisp.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_lisp.dir/build
-.PHONY : imu_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_genlisp
-
-# Build rule for target.
-imu_msgs_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_genlisp
-.PHONY : imu_msgs_genlisp
-
-# fast build rule for target.
-imu_msgs_genlisp/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_genlisp.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_genlisp.dir/build
-.PHONY : imu_msgs_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named _imu_msgs_generate_messages_check_deps_Angle
-
-# Build rule for target.
-_imu_msgs_generate_messages_check_deps_Angle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _imu_msgs_generate_messages_check_deps_Angle
-.PHONY : _imu_msgs_generate_messages_check_deps_Angle
-
-# fast build rule for target.
-_imu_msgs_generate_messages_check_deps_Angle/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/_imu_msgs_generate_messages_check_deps_Angle.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/_imu_msgs_generate_messages_check_deps_Angle.dir/build
-.PHONY : _imu_msgs_generate_messages_check_deps_Angle/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_gennodejs
-
-# Build rule for target.
-imu_msgs_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_gennodejs
-.PHONY : imu_msgs_gennodejs
-
-# fast build rule for target.
-imu_msgs_gennodejs/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_gennodejs.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_gennodejs.dir/build
-.PHONY : imu_msgs_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_generate_messages_py
-
-# Build rule for target.
-imu_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_generate_messages_py
-.PHONY : imu_msgs_generate_messages_py
-
-# fast build rule for target.
-imu_msgs_generate_messages_py/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_py.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_generate_messages_py.dir/build
-.PHONY : imu_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named imu_msgs_genpy
-
-# Build rule for target.
-imu_msgs_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 imu_msgs_genpy
-.PHONY : imu_msgs_genpy
-
-# fast build rule for target.
-imu_msgs_genpy/fast:
-	$(MAKE) -f pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_genpy.dir/build.make pigeon_imu_driver/imu_msgs/CMakeFiles/imu_msgs_genpy.dir/build
-.PHONY : imu_msgs_genpy/fast
-
-#=============================================================================
 # Target rules for targets named _run_tests_joint_state_publisher_rostest_test_test_slash_fiction.launch
 
 # Build rule for target.
@@ -3145,173 +2989,17 @@ hector_trajectory_server/fast:
 .PHONY : hector_trajectory_server/fast
 
 #=============================================================================
-# Target rules for targets named mpu6050_geneus
+# Target rules for targets named myahrs_driver
 
 # Build rule for target.
-mpu6050_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_geneus
-.PHONY : mpu6050_geneus
+myahrs_driver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 myahrs_driver
+.PHONY : myahrs_driver
 
 # fast build rule for target.
-mpu6050_geneus/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_geneus.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_geneus.dir/build
-.PHONY : mpu6050_geneus/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_generate_messages_py
-
-# Build rule for target.
-mpu6050_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_generate_messages_py
-.PHONY : mpu6050_generate_messages_py
-
-# fast build rule for target.
-mpu6050_generate_messages_py/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_py.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_py.dir/build
-.PHONY : mpu6050_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_generate_messages_cpp
-
-# Build rule for target.
-mpu6050_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_generate_messages_cpp
-.PHONY : mpu6050_generate_messages_cpp
-
-# fast build rule for target.
-mpu6050_generate_messages_cpp/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_cpp.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_cpp.dir/build
-.PHONY : mpu6050_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_generate_messages
-
-# Build rule for target.
-mpu6050_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_generate_messages
-.PHONY : mpu6050_generate_messages
-
-# fast build rule for target.
-mpu6050_generate_messages/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages.dir/build
-.PHONY : mpu6050_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_generate_messages_eus
-
-# Build rule for target.
-mpu6050_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_generate_messages_eus
-.PHONY : mpu6050_generate_messages_eus
-
-# fast build rule for target.
-mpu6050_generate_messages_eus/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_eus.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_eus.dir/build
-.PHONY : mpu6050_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named _mpu6050_generate_messages_check_deps_ResetIMU
-
-# Build rule for target.
-_mpu6050_generate_messages_check_deps_ResetIMU: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _mpu6050_generate_messages_check_deps_ResetIMU
-.PHONY : _mpu6050_generate_messages_check_deps_ResetIMU
-
-# fast build rule for target.
-_mpu6050_generate_messages_check_deps_ResetIMU/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/_mpu6050_generate_messages_check_deps_ResetIMU.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/_mpu6050_generate_messages_check_deps_ResetIMU.dir/build
-.PHONY : _mpu6050_generate_messages_check_deps_ResetIMU/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_generate_messages_lisp
-
-# Build rule for target.
-mpu6050_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_generate_messages_lisp
-.PHONY : mpu6050_generate_messages_lisp
-
-# fast build rule for target.
-mpu6050_generate_messages_lisp/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_lisp.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_lisp.dir/build
-.PHONY : mpu6050_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_genlisp
-
-# Build rule for target.
-mpu6050_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_genlisp
-.PHONY : mpu6050_genlisp
-
-# fast build rule for target.
-mpu6050_genlisp/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_genlisp.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_genlisp.dir/build
-.PHONY : mpu6050_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_node
-
-# Build rule for target.
-mpu6050_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_node
-.PHONY : mpu6050_node
-
-# fast build rule for target.
-mpu6050_node/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_node.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_node.dir/build
-.PHONY : mpu6050_node/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_generate_messages_nodejs
-
-# Build rule for target.
-mpu6050_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_generate_messages_nodejs
-.PHONY : mpu6050_generate_messages_nodejs
-
-# fast build rule for target.
-mpu6050_generate_messages_nodejs/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_nodejs.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_generate_messages_nodejs.dir/build
-.PHONY : mpu6050_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_genpy
-
-# Build rule for target.
-mpu6050_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_genpy
-.PHONY : mpu6050_genpy
-
-# fast build rule for target.
-mpu6050_genpy/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_genpy.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_genpy.dir/build
-.PHONY : mpu6050_genpy/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_gennodejs
-
-# Build rule for target.
-mpu6050_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_gennodejs
-.PHONY : mpu6050_gennodejs
-
-# fast build rule for target.
-mpu6050_gennodejs/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_gennodejs.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_gennodejs.dir/build
-.PHONY : mpu6050_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_gencpp
-
-# Build rule for target.
-mpu6050_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_gencpp
-.PHONY : mpu6050_gencpp
-
-# fast build rule for target.
-mpu6050_gencpp/fast:
-	$(MAKE) -f pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_gencpp.dir/build.make pigeon_imu_driver/mpu6050/CMakeFiles/mpu6050_gencpp.dir/build
-.PHONY : mpu6050_gencpp/fast
+myahrs_driver/fast:
+	$(MAKE) -f myahrs_driver/CMakeFiles/myahrs_driver.dir/build.make myahrs_driver/CMakeFiles/myahrs_driver.dir/build
+.PHONY : myahrs_driver/fast
 
 #=============================================================================
 # Target rules for targets named run_tests_rosserial_test_rostest
@@ -4378,18 +4066,6 @@ help:
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_nodejs"
-	@echo "... imu_msgs_generate_messages_eus"
-	@echo "... imu_msgs_gencpp"
-	@echo "... imu_msgs_geneus"
-	@echo "... imu_msgs_generate_messages_nodejs"
-	@echo "... imu_msgs_generate_messages_cpp"
-	@echo "... imu_msgs_generate_messages"
-	@echo "... imu_msgs_generate_messages_lisp"
-	@echo "... imu_msgs_genlisp"
-	@echo "... _imu_msgs_generate_messages_check_deps_Angle"
-	@echo "... imu_msgs_gennodejs"
-	@echo "... imu_msgs_generate_messages_py"
-	@echo "... imu_msgs_genpy"
 	@echo "... _run_tests_joint_state_publisher_rostest_test_test_slash_fiction.launch"
 	@echo "... _run_tests_joint_state_publisher_rostest_test_test_64_joint_robot.launch"
 	@echo "... _run_tests_joint_state_publisher_rostest_test_test_mimic_chain.launch"
@@ -4491,19 +4167,7 @@ help:
 	@echo "... pose_and_orientation_to_imu_node"
 	@echo "... hector_map_server"
 	@echo "... hector_trajectory_server"
-	@echo "... mpu6050_geneus"
-	@echo "... mpu6050_generate_messages_py"
-	@echo "... mpu6050_generate_messages_cpp"
-	@echo "... mpu6050_generate_messages"
-	@echo "... mpu6050_generate_messages_eus"
-	@echo "... _mpu6050_generate_messages_check_deps_ResetIMU"
-	@echo "... mpu6050_generate_messages_lisp"
-	@echo "... mpu6050_genlisp"
-	@echo "... mpu6050_node"
-	@echo "... mpu6050_generate_messages_nodejs"
-	@echo "... mpu6050_genpy"
-	@echo "... mpu6050_gennodejs"
-	@echo "... mpu6050_gencpp"
+	@echo "... myahrs_driver"
 	@echo "... run_tests_rosserial_test_rostest"
 	@echo "... run_tests_rosserial_test"
 	@echo "... rosserial_test_rosserial_lib"
