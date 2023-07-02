@@ -2989,6 +2989,32 @@ hector_trajectory_server/fast:
 .PHONY : hector_trajectory_server/fast
 
 #=============================================================================
+# Target rules for targets named odom_pub
+
+# Build rule for target.
+odom_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 odom_pub
+.PHONY : odom_pub
+
+# fast build rule for target.
+odom_pub/fast:
+	$(MAKE) -f kwj_localization/CMakeFiles/odom_pub.dir/build.make kwj_localization/CMakeFiles/odom_pub.dir/build
+.PHONY : odom_pub/fast
+
+#=============================================================================
+# Target rules for targets named initial_goal
+
+# Build rule for target.
+initial_goal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 initial_goal
+.PHONY : initial_goal
+
+# fast build rule for target.
+initial_goal/fast:
+	$(MAKE) -f kwj_localization/CMakeFiles/initial_goal.dir/build.make kwj_localization/CMakeFiles/initial_goal.dir/build
+.PHONY : initial_goal/fast
+
+#=============================================================================
 # Target rules for targets named myahrs_driver
 
 # Build rule for target.
@@ -4167,6 +4193,8 @@ help:
 	@echo "... pose_and_orientation_to_imu_node"
 	@echo "... hector_map_server"
 	@echo "... hector_trajectory_server"
+	@echo "... odom_pub"
+	@echo "... initial_goal"
 	@echo "... myahrs_driver"
 	@echo "... run_tests_rosserial_test_rostest"
 	@echo "... run_tests_rosserial_test"
