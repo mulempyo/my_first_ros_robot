@@ -1226,6 +1226,12 @@ kwj_localization_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/kwj_localizat
 //Value Computed by CMake
 kwj_localization_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/kwj_localization
 
+//Value Computed by CMake
+kwj_slam_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/kwj_slam
+
+//Value Computed by CMake
+kwj_slam_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/kwj_slam
+
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
 
@@ -1285,10 +1291,10 @@ my_odometry_publisher_DIR:PATH=
 my_odometry_publisher_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/my_odometry_publisher
 
 //Value Computed by CMake
-my_robot_kwj_2dnav_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/my_robot_kwj_2dnav
+my_robot_kwj_2dnav_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/kwj_navigation
 
 //Value Computed by CMake
-my_robot_kwj_2dnav_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/my_robot_kwj_2dnav
+my_robot_kwj_2dnav_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/kwj_navigation
 
 //Value Computed by CMake
 my_robot_setup_tf_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/my_robot_setup_tf
@@ -1557,10 +1563,10 @@ teleop_twist_listen_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/teleop_twi
 teleop_twist_listen_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/teleop_twist_listen
 
 //Value Computed by CMake
-teleop_twist_listener_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/teleop_twist_listener
+teleop_twist_listener_BINARY_DIR:STATIC=/home/kimwonjun/catkin_ws/build/arduino/only_jetson_teleop_twist_listener
 
 //Value Computed by CMake
-teleop_twist_listener_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/teleop_twist_listener
+teleop_twist_listener_SOURCE_DIR:STATIC=/home/kimwonjun/catkin_ws/src/arduino/only_jetson_teleop_twist_listener
 
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/melodic/share/tf2/cmake
@@ -1751,7 +1757,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=43
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=29
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1858,8 +1864,6 @@ QT_DESIGNER_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: QT_DOC_DIR
 QT_DOC_DIR-ADVANCED:INTERNAL=1
 QT_HEADERS_DIR:INTERNAL=/usr/include/qt4
-//ADVANCED property for variable: QT_LIBRARY_DIR
-QT_LIBRARY_DIR-ADVANCED:INTERNAL=1
 //Qt library dir
 QT_LIBRARY_DIR:INTERNAL=/usr/lib/aarch64-linux-gnu
 //ADVANCED property for variable: QT_LINGUIST_EXECUTABLE
