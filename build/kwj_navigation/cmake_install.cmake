@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kimwonjun/catkin_ws/build/kwj_navigation/catkin_generated/installspace/my_robot_kwj_2dnav.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kimwonjun/catkin_ws/build/kwj_navigation/catkin_generated/installspace/kwj_navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_kwj_2dnav/cmake" TYPE FILE FILES
-    "/home/kimwonjun/catkin_ws/build/kwj_navigation/catkin_generated/installspace/my_robot_kwj_2dnavConfig.cmake"
-    "/home/kimwonjun/catkin_ws/build/kwj_navigation/catkin_generated/installspace/my_robot_kwj_2dnavConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kwj_navigation/cmake" TYPE FILE FILES
+    "/home/kimwonjun/catkin_ws/build/kwj_navigation/catkin_generated/installspace/kwj_navigationConfig.cmake"
+    "/home/kimwonjun/catkin_ws/build/kwj_navigation/catkin_generated/installspace/kwj_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_kwj_2dnav" TYPE FILE FILES "/home/kimwonjun/catkin_ws/src/kwj_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kwj_navigation" TYPE FILE FILES "/home/kimwonjun/catkin_ws/src/kwj_navigation/package.xml")
 endif()
 
