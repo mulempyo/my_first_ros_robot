@@ -110,10 +110,10 @@ if(a==0 && c==0){ //stop
 drive(0,0,0,0,0,0);
 }
 if(a==0 && c>0){ //right
-drive(255,255,0,0,0,1);   
+drive(100,100,0,1,0,1);   
 }
 if(a==0 && c<0){ //left
-drive(255,255,1,0,0,0);
+drive(100,100,1,0,1,0);
 }
 }
 ros::Subscriber<geometry_msgs::Twist> sub("cmd_vel", dc_driver); 
