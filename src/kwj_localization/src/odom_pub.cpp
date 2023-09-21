@@ -23,11 +23,8 @@ const double initialTheta = 0.00000000001;
 const double PI = 3.141592;
 
 // Robot physical constants
-#if MOTORTYPE == JGA25370
-const double TICKS_PER_REVOLUTION = 102.0; // For reference purposes.
-#else
+
 const double TICKS_PER_REVOLUTION = 1860.0; // For reference purposes.
-#endif
 const double WHEEL_RADIUS = 0.033; // Wheel radius in meters
 const double WHEEL_BASE = 0.160; // Center of left tire to center of right tire
 const double TICKS_PER_METER = TICKS_PER_REVOLUTION / (2.0 * 3.141592654 * WHEEL_RADIUS);

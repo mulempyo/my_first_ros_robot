@@ -23,7 +23,7 @@ ros::Publisher rightPub("right_ticks", &right_wheel_tick_count);
 std_msgs::Int16 left_wheel_tick_count;
 ros::Publisher leftPub("left_ticks", &left_wheel_tick_count);
 
-const int interval = 30;
+const int interval = 200;
 long previousMillis = 0;
 long currentMillis = 0;
 
@@ -99,21 +99,21 @@ float a = msg.linear.x;
 float c = msg.angular.z;
 
 if(a>0 && c==0){ //straight
-drive(255,255,1,0,0,1);
+drive(80,80,1,0,0,1);
 }
 
 if(a<0 && c==0){ //backward
-drive(255,255,0,1,1,0);
+drive(80,80,0,1,1,0);
 }
 
 if(a==0 && c==0){ //stop
 drive(0,0,0,0,0,0);
 }
 if(a==0 && c>0){ //right
-drive(100,100,0,1,0,1);   
+drive(80,80,0,1,0,1);   
 }
 if(a==0 && c<0){ //left
-drive(100,100,1,0,1,0);
+drive(80,80,1,0,1,0);
 }
 }
 ros::Subscriber<geometry_msgs::Twist> sub("cmd_vel", dc_driver); 
@@ -143,7 +143,7 @@ pinMode(9, OUTPUT); //ENA
 
 attachInterrupt(ENC_IN_LEFT_A, left_wheel_tick, RISING);
 attachInterrupt(ENC_IN_RIGHT_A, right_wheel_tick, RISING);
-
+nh.getHardware()->setBaud(128000);
 nh.initNode();
 nh.advertise(rightPub);
 nh.advertise(leftPub);

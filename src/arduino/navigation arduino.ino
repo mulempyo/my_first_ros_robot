@@ -23,7 +23,7 @@ std_msgs::Int16 left_wheel_tick_count;
 ros::Publisher leftPub("left_ticks", &left_wheel_tick_count);
  
 
-const int interval = 30;
+const int interval = 200;
 long previousMillis = 0;
 long currentMillis = 0;
 
@@ -37,10 +37,10 @@ const int in4 = 8;
  
 
 const int PWM_INCREMENT = 1;
-const int TICKS_PER_REVOLUTION = 620;
+const int TICKS_PER_REVOLUTION = 1860;
 const double WHEEL_RADIUS = 0.033;
 const double WHEEL_BASE = 0.17;
-const double TICKS_PER_METER = 3100; // Originally 2880
+const double TICKS_PER_METER = (TICKS_PER_REVOLUTION / (2.0*3.141592*WHEEL_RADIUS))
 const int K_P = 278;
 const int b = 52;
 const int DRIFT_MULTIPLIER = 120;
@@ -222,12 +222,12 @@ void set_pwm_values() {
   }
  
   if (pwmRightReq > 0) { 
-    digitalWrite(in3, HIGH);
-    digitalWrite(in4, LOW);
-  }
-  else if(pwmRightReq < 0) { 
     digitalWrite(in3, LOW);
     digitalWrite(in4, HIGH);
+  }
+  else if(pwmRightReq < 0) { 
+    digitalWrite(in3, HIGH);
+    digitalWrite(in4, LOW);
   }
   else if (pwmRightReq == 0 && pwmRightOut == 0) { 
     digitalWrite(in3, LOW);
@@ -304,7 +304,7 @@ void setup() {
   analogWrite(enB, 0);
  
   
-  nh.getHardware()->setBaud(57600);
+  nh.getHardware()->setBaud(128000);
   nh.initNode();
   nh.advertise(rightPub);
   nh.advertise(leftPub);
